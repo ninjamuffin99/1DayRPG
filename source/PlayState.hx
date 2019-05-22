@@ -30,13 +30,12 @@ class PlayState extends FlxState
 				e.kill();
 				BattleState.outcome = BattleState.Outcome.NONE;
 			}
+			else
+			{
+				openSubState(new BattleState());
+			}
 			
-			openSubState(new BattleState());
-		});
-		
-		if (FlxG.overlap(_player, enemyTest))
-		{
 			
-		}
+		});  
 	}
 }
