@@ -13,20 +13,25 @@ import flixel.system.FlxAssets.FlxGraphicAsset;
 class Player extends FlxSprite 
 {
 	private var speed:Float = 200;
+	public static var hp:Int = 10;
 
 	public function new(?X:Float=0, ?Y:Float=0, ?SimpleGraphic:FlxGraphicAsset) 
 	{
 		super(X, Y, SimpleGraphic);
 		
-		var tex = FlxAtlasFrames.fromSparrow(AssetPaths.player__png, AssetPaths.player__xml);
+		var tex = FlxAtlasFrames.fromSparrow(AssetPaths.all_animations_player__png, AssetPaths.all_animations_player__xml);
 		frames = tex;
 		
-		animation.addByPrefix("walkL", "walk left right", 24);
-		animation.addByPrefix("walkUp", "walking up ", 24);
-		animation.addByPrefix("walkDown", "walkDown", 24);
+		animation.addByPrefix("walkL", "walk_left_right", 24);
+		animation.addByPrefix("walkUp", "walking_up ", 24);
+		animation.addByPrefix("walkDown", "walk_down", 24);
+		
+		animation.addByPrefix("idleUp", "backward_idle");
+		animation.addByPrefix("idleDown", "idle_forward ");
+		animation.addByPrefix("idleL", "left_right_idle");
 		animation.play("walkL");
 		
-		setGraphicSize(Std.int(width * 0.2));
+		setGraphicSize(Std.int(width * 0.4));
 		
 		setFacingFlip(FlxObject.LEFT, false, false);
 		setFacingFlip(FlxObject.RIGHT, true, false);
@@ -84,13 +89,13 @@ class Player extends FlxSprite
 			switch(facing)
 			{
 				case FlxObject.LEFT:
-					animation.play("walkL");
+					animation.play("idleL");
 				case FlxObject.RIGHT:
-					animation.play("walkL");
+					animation.play("idleL");
 				case FlxObject.DOWN:
-					animation.play("walkDown");
+					animation.play("idleDown");
 				case FlxObject.UP:
-					animation.play("walkUp");
+					animation.play("idleUp");
 			}
 		}
 	}
