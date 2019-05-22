@@ -1,6 +1,7 @@
 package;
 
 import flixel.FlxG;
+import flixel.FlxSprite;
 import flixel.FlxState;
 
 class PlayState extends FlxState
@@ -10,10 +11,15 @@ class PlayState extends FlxState
 	
 	override public function create():Void
 	{
+		var bg:FlxSprite = new FlxSprite().loadGraphic(AssetPaths.room__png);
+		bg.setGraphicSize(FlxG.width, FlxG.height);
+		bg.updateHitbox();
+		add(bg);
+		
 		_player = new Player(20, 20);
 		add(_player);
 		
-		enemyTest = new Enemy(500, 500);
+		enemyTest = new Enemy(500, 300);
 		add(enemyTest);
 		
 		super.create();
@@ -34,8 +40,6 @@ class PlayState extends FlxState
 			{
 				openSubState(new BattleState());
 			}
-			
-			
 		});  
 	}
 }

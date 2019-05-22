@@ -57,11 +57,11 @@ class BattleState extends FlxSubState
 			{
 				enemyHP -= FlxG.random.int(1, 3);
 				playerTurn = false;
-				FlxFlicker.flicker(enemy, 1, 0.04, true, true, function(flk:FlxFlicker)
+				FlxFlicker.flicker(enemy, 0.6, 0.04, true, true, function(flk:FlxFlicker)
 				{
-					new FlxTimer().start(FlxG.random.float(1, 3), function(tmr:FlxTimer)
+					new FlxTimer().start(FlxG.random.float(0.7, 1.8), function(tmr:FlxTimer)
 					{
-						playerHP -= FlxG.random.int(0, 2);
+						playerHP -= FlxG.random.int(1, 2);
 						playerTurn = true;
 					});
 				});
