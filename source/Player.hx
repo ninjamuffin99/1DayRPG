@@ -22,12 +22,14 @@ class Player extends FlxSprite
 		frames = tex;
 		
 		animation.addByPrefix("walkL", "walk left right", 24);
+		animation.addByPrefix("walkUp", "walking up ", 24);
+		animation.addByPrefix("walkDown", "walkDown", 24);
 		animation.play("walkL");
 		
 		setGraphicSize(Std.int(width * 0.2));
 		
 		setFacingFlip(FlxObject.LEFT, false, false);
-		setFdacingFlip(FlxObject.RIGHT, true, false);
+		setFacingFlip(FlxObject.RIGHT, true, false);
 	}
 	
 	override public function update(elapsed:Float):Void 
@@ -42,7 +44,7 @@ class Player extends FlxSprite
 		if (FlxG.keys.pressed.A)
 		{
 			velocity.x = -speed;
-			facing = FlxObject.RIGHT;
+			facing = FlxObject.LEFT;
 		}
 		else if (FlxG.keys.pressed.D)
 		{
@@ -51,6 +53,46 @@ class Player extends FlxSprite
 		}
 		else
 			velocity.x = 0;
+		
+		if (FlxG.keys.pressed.W)
+		{
+			facing = FlxObject.UP;
+			velocity.y = -speed;
+		}
+		else if (FlxG.keys.pressed.S)
+		{
+			facing = FlxObject.DOWN;
+			velocity.y = speed;
+		}
+		else
+			velocity.y = 0;
+		
+		switch(facing)
+		{
+			case FlxObject.LEFT:
+				animation.play("walkL");
+			case FlxObject.RIGHT:
+				animation.play("walkL");
+			case FlxObject.DOWN:
+				animation.play("walkDown");
+			case FlxObject.UP:
+				animation.play("walkUp");
+		}
+		
+		if (velocity.x == 0 && velocity.y == 0)
+		{
+			switch(facing)
+			{
+				case FlxObject.LEFT:
+					animation.play("walkL");
+				case FlxObject.RIGHT:
+					animation.play("walkL");
+				case FlxObject.DOWN:
+					animation.play("walkDown");
+				case FlxObject.UP:
+					animation.play("walkUp");
+			}
+		}
 	}
 	
 }
