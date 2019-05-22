@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="all_animations_player.png">
+	<!-- Created with Adobe Animate version 19.1.0.349 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="backward_idle0000" x="0" y="0" width="176" height="483"/>
+	<SubTexture name="idle_forward 0000" x="176" y="0" width="203" height="507"/>
+	<SubTexture name="left_right_idle 0000" x="379" y="0" width="243" height="505"/>
+	<SubTexture name="walk_down0000" x="622" y="0" width="198" height="505" frameX="0" frameY="0" frameWidth="200" frameHeight="526"/>
+	<SubTexture name="walk_down0001" x="622" y="0" width="198" height="505" frameX="0" frameY="0" frameWidth="200" frameHeight="526"/>
+	<SubTexture name="walk_down0002" x="622" y="0" width="198" height="505" frameX="0" frameY="0" frameWidth="200" frameHeight="526"/>
+	<SubTexture name="walk_down0003" x="622" y="0" width="198" height="505" frameX="0" frameY="0" frameWidth="200" frameHeight="526"/>
+	<SubTexture name="walk_down0004" x="820" y="0" width="199" height="525" frameX="-1" frameY="-1" frameWidth="200" frameHeight="526"/>
+	<SubTexture name="walk_down0005" x="820" y="0" width="199" height="525" frameX="-1" frameY="-1" frameWidth="200" frameHeight="526"/>
+	<SubTexture name="walk_down0006" x="820" y="0" width="199" height="525" frameX="-1" frameY="-1" frameWidth="200" frameHeight="526"/>
+	<SubTexture name="walk_down0007" x="820" y="0" width="199" height="525" frameX="-1" frameY="-1" frameWidth="200" frameHeight="526"/>
+	<SubTexture name="walk_left_right0000" x="0" y="525" width="251" height="483" frameX="-3" frameY="-2" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0001" x="0" y="525" width="251" height="483" frameX="-3" frameY="-2" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0002" x="0" y="525" width="251" height="483" frameX="-3" frameY="-2" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0003" x="251" y="525" width="244" height="495" frameX="-3" frameY="-2" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0004" x="251" y="525" width="244" height="495" frameX="-3" frameY="-2" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0005" x="251" y="525" width="244" height="495" frameX="-3" frameY="-2" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0006" x="495" y="525" width="242" height="502" frameX="0" frameY="-2" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0007" x="495" y="525" width="242" height="502" frameX="0" frameY="-2" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0008" x="495" y="525" width="242" height="502" frameX="0" frameY="-2" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0009" x="737" y="525" width="242" height="498" frameX="-4" frameY="0" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0010" x="737" y="525" width="242" height="498" frameX="-4" frameY="0" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0011" x="737" y="525" width="242" height="498" frameX="-4" frameY="0" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0012" x="0" y="1027" width="243" height="505" frameX="-3" frameY="0" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0013" x="0" y="1027" width="243" height="505" frameX="-3" frameY="0" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walk_left_right0014" x="0" y="1027" width="243" height="505" frameX="-3" frameY="0" frameWidth="254" frameHeight="505"/>
+	<SubTexture name="walking_up 0000" x="243" y="1027" width="176" height="483"/>
+	<SubTexture name="walking_up 0001" x="243" y="1027" width="176" height="483"/>
+	<SubTexture name="walking_up 0002" x="243" y="1027" width="176" height="483"/>
+	<SubTexture name="walking_up 0003" x="243" y="1027" width="176" height="483"/>
+	<SubTexture name="walking_up 0004" x="419" y="1027" width="176" height="475" frameX="0" frameY="0" frameWidth="176" frameHeight="483"/>
+	<SubTexture name="walking_up 0005" x="419" y="1027" width="176" height="475" frameX="0" frameY="0" frameWidth="176" frameHeight="483"/>
+	<SubTexture name="walking_up 0006" x="419" y="1027" width="176" height="475" frameX="0" frameY="0" frameWidth="176" frameHeight="483"/>
+	<SubTexture name="walking_up 0007" x="419" y="1027" width="176" height="475" frameX="0" frameY="0" frameWidth="176" frameHeight="483"/>
+</TextureAtlas>
