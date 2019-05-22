@@ -17,6 +17,11 @@ class Player extends FlxSprite
 		
 		var tex = FlxAtlasFrames.fromSparrow(AssetPaths.all_moving_animation__png, AssetPaths.all_moving_animation__xml);
 		frames = tex;
+		
+		animation.addByPrefix("walkL", "Symbol 1", 24);
+		animation.play("walkL");
+		
+		setGraphicSize(Std.int(width * 0.2));
 	}
 	
 }
