@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="monster 1.png">
+	<!-- Created with Adobe Animate version 19.1.0.349 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 1 instance 10000" x="0" y="0" width="422" height="204" frameX="-26" frameY="-6" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10001" x="0" y="0" width="422" height="204" frameX="-26" frameY="-6" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10002" x="0" y="0" width="422" height="204" frameX="-26" frameY="-6" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10003" x="0" y="204" width="498" height="217" frameX="0" frameY="-4" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10004" x="0" y="204" width="498" height="217" frameX="0" frameY="-4" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10005" x="0" y="204" width="498" height="217" frameX="0" frameY="-4" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10006" x="0" y="421" width="430" height="204" frameX="-24" frameY="-3" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10007" x="0" y="421" width="430" height="204" frameX="-24" frameY="-3" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10008" x="0" y="421" width="430" height="204" frameX="-24" frameY="-3" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10009" x="0" y="625" width="430" height="247" frameX="-11" frameY="0" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10010" x="0" y="625" width="430" height="247" frameX="-11" frameY="0" frameWidth="498" frameHeight="247"/>
+	<SubTexture name="Symbol 1 instance 10011" x="0" y="625" width="430" height="247" frameX="-11" frameY="0" frameWidth="498" frameHeight="247"/>
+</TextureAtlas>
